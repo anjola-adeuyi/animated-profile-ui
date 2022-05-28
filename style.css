@@ -18,8 +18,8 @@ body {
 .card {
   position: relative;
   width: 350px;
-  /* height: 190px; */
-  height: 450px;
+  height: 190px;
+  /* height: 450px; */
   background: #fff;
   border-radius: 20px;
   box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
@@ -47,6 +47,7 @@ body {
 .card:hover .imgBx {
   width: 250px;
   height: 250px;
+  top: -20%;
 }
 
 .imgBx img {
@@ -65,6 +66,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: flex-end;
+  overflow: hidden;
 }
 
 .card .content .details {
@@ -72,6 +74,11 @@ body {
   text-align: center;
   width: 100%;
   transition: 0.5s;
+  transform: translateY(100px);
+}
+
+.card:hover .content .details {
+  transform: translateY(0);
 }
 
 .card .content .details h2 {
