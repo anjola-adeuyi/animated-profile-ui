@@ -121,4 +121,11 @@ body {
   font-weight: 500;
   background: #ff5f95;
   color: #fff;
+  cursor: pointer;
+}
+
+.card .content .details .actionBtn button:nth-child(2) {
+  border: 1px solid #999;
+  background: #fff;
+  color: #999;
 }
